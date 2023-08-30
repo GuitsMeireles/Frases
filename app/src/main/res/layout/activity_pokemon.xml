@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".PokemonActivity">
 
     <Button
@@ -39,6 +40,7 @@
         android:layout_marginBottom="14dp"
         android:text="Pokemons"
         android:textSize="34sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/prox_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
