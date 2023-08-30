@@ -14,12 +14,12 @@ class SegundaTela : AppCompatActivity() {
     private lateinit var button: Button
 
     private val phrases = listOf(
-        Phrase("Comece onde você está, use o que você tem e faça o que você pode.","Autor 1"),
-        Phrase("Coragem é saber o que não temer.","Autor 2"),
-        Phrase("Conhecer a si mesmo é o começo de toda sabedoria.", "Autor 3"),
-        Phrase("Acredite em milagres, mas não dependa deles.", "Autor 4"),
-        Phrase("Cada segundo é tempo para mudar tudo para sempre.", "Autor 5"),
-        Phrase("Aprenda com o ontem. Viva o hoje. tenha esperança para o amanhã.", "Autor 6")
+        Phrase("Comece onde você está, use o que você tem e faça o que você pode.","Niponica"),
+        Phrase("Coragem é saber o que não temer.","KeikoReturns"),
+        Phrase("Conhecer a si mesmo é o começo de toda sabedoria.", "Paternostro"),
+        Phrase("Acredite em milagres, mas não dependa deles.", "Yasmim Gama"),
+        Phrase("Cada segundo é tempo para mudar tudo para sempre.", "Ploo3o"),
+        Phrase("Aprenda com o ontem. Viva o hoje. tenha esperança para o amanhã.", "AnaLuizaJob")
     )
 
 
@@ -46,13 +46,10 @@ class SegundaTela : AppCompatActivity() {
                 currentIndex++
             } else {
                 currentIndex = 0
-
-                if (currentIndex < phrases.size) {
-                    val currentFrase = phrases[currentIndex]
+                val currentFrase = phrases[currentIndex]
                     textView.text = currentFrase.phrase
                     authorTextView.text = currentFrase.author
                     currentIndex++
-                }
         }
     }
 }}

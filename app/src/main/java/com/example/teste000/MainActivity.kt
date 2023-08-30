@@ -15,9 +15,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.pokeButton.setOnClickListener {
+            val i = Intent(this,PokemonActivity::class.java )
+            startActivity(i)
+
         binding.buttonIr.setOnClickListener {
             val i = Intent(this,SegundaTela::class.java )
             startActivity(i)
         }
     }
-}
+}}
