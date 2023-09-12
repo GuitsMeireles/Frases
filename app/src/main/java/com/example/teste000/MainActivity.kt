@@ -19,13 +19,13 @@ class MainActivity : AppCompatActivity() {
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
-        binding.pokeButton.setOnClickListener {
-            val i = Intent(this,PokemonActivity::class.java )
-            startActivity(i)
-
         binding.buttonIr.setOnClickListener {
             val i = Intent(this,SegundaTela::class.java )
             startActivity(i)
         }
+
+        binding.pokeButton.setOnClickListener {
+            val i = Intent(this,PokemonActivity::class.java )
+            startActivity(i)
     }
 }}
